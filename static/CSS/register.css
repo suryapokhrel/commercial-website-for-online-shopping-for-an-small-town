@@ -1,0 +1,192 @@
+body{
+    background-color: white;
+    color: black;
+}
+.regContainer {
+    min-width: 30%;
+    max-width: 40%;
+    height: auto;
+    background: white;
+    /* background-image: url(../images/background/img10.jpg); */
+    background-size: cover;
+    margin: 0 auto;
+    border: 2px;
+    border-radius: 10%;
+    margin-bottom: 1%;
+    margin-top: 2%;
+    box-shadow: 3px 4px 5px 6px black;
+}
+
+#login {
+    border: black;
+}
+
+.usercenter {
+    padding-top: 10px;
+    text-align: center;
+    /* background-color:orange;  */
+    font-size: 30px;
+}
+
+.green {
+    border-radius: 4%;
+    font-size: 25px;
+    padding-left: 20px;
+    text-align: center;
+}
+table, td{
+    top: 10px;
+}
+table {
+    padding-left: 20px;
+    text-align: center;
+}
+table, td, label{
+    text-align: left;
+}
+
+table .shop1{
+    margin: 0 2px
+}
+.regContainer input{
+    margin-left: 20%;
+    margin-bottom: 10px;
+}
+.regContainer input[type=text] {
+    padding: 12px 20px;
+    width: 60%;
+    /* margin: 8px 0; */
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+.regContainer input[type=email],
+.regContainer input[type=password],
+.regContainer select {
+    width: 60%;
+    margin-left: 20%;
+    margin-bottom: 10px;
+    padding: 12px 20px;
+    /* margin: 8px 0; */
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 5px;
+}
+
+
+.registerbtn button {
+    background-color: lightblue;
+    color: black;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: purple;
+    cursor: pointer;
+    width: 50%;
+}
+
+.registerbtn button:hover {
+    opacity: 0.8;
+}
+
+
+/* #box,
+#box2,
+#box3,
+#box4,
+#box5,
+#box6, */
+#box7,
+#box8,
+#box9,
+#box10,
+#box11,
+#box12,
+#box13,
+#box14,
+#box15,
+#box16,
+#box18,
+#box17 {
+    display: none;
+    color: black;
+
+}
+
+
+@media screen and (max-width: 600px) {
+    .regContainer{
+        margin-top: 2%;
+        margin-bottom: 0%;
+        min-width: 80%;
+    }
+
+    .regContainer input[type=text],
+    .regContainer input[type=password],
+    .regContainer input[type=email] {
+        display: grid;
+        float: none;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .regContainer input[type=email], .regContainer select {
+        width: 100%;
+        margin-left: 20%;
+        margin-bottom: 10px;
+    }
+
+    .orange {
+        font-size: 10px;
+        width: 80%;
+    }
+
+    .green{
+        font-size: 16px;
+        font-weight: bold;
+        color: blueviolet;
+    }
+
+    .usercenter{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width: 900px) and (min-width:601px) {
+    .regContainer{
+        margin-top: 2%;
+        margin-bottom: 0%;
+        min-width: 60%;
+    }
+
+    .regContainer input[type=text],
+    .regContainer input[type=password],
+    .regContainer input[type=email] {
+        display: grid;
+        float: none;
+        width: 100%;
+        font-size: 10px;
+    }
+
+    .regContainer input[type=email], .regContainer select {
+        width: 100%;
+        margin-left: 20%;
+        margin-bottom: 10px;
+    }
+
+    .orange {
+        font-size: 10px;
+        width: 80%;
+    }
+
+    .green{
+        font-size: 16px;
+        font-weight: bold;
+        color: blueviolet;
+    }
+
+    .usercenter{
+        font-size: 18px;
+    }
+}

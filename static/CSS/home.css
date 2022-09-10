@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background:white;
+    position: sticky;
+}
+
+input[type=number]{
+    height: 30px;
+    width: 60px;
+    border-radius: 5px;
+    color: black;
+    border-color: white;
+}
+
+.banner {
+    /* background-image: url("./../images/background/heritage.jpg"); */
+    height: 60vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top 25% right 25%;
+
+    padding: 0 80px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-bottom: 10px;
+    /* position: fixed; */
+    align-items: center;
+    background:rgba(255, 255, 255, 0.122) ;
+
+}
+
+.banner h4 {
+    padding: 5px;
+    color: black;
+    background: rgba(255, 255, 255, 0.782);
+    border-radius: 4px;
+    font-size: large;
+}
+
+.banner h1 {
+    color: rgb(212, 148, 28);
+    background: rgba(255, 255, 255, 0.582);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.banner h2 {
+    color: orange;
+    background: rgba(255, 255, 255, 0.582);
+    border-radius: 4px;
+    padding: 5px;
+}
+
+.banner p {
+    color: black;
+    border-radius: 4px;
+    background: rgba(255, 255, 255, 0.582);
+}
+
+.banner button {
+    box-shadow: inset 0px 1px 0px 0px #fce2c1;
+    background: linear-gradient(to bottom, #ffc477 5%, #fb9e25 100%);
+    background-color: #ffc477;
+    border-radius: 11px;
+    border: 2px solid #eeb44f;
+    display: inline-block;
+    cursor: pointer;
+    color: #ffffff;
+    font-family: Arial;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 8px 18px;
+    text-decoration: none;
+    text-shadow: 0px 1px 0px #cc9f52;
+}
+
+.banner button:hover {
+    background: linear-gradient(to bottom, #fb9e25 5%, #ffc477 100%);
+    background-color: #fb9e25;
+}
+
+.banner button:active {
+    position: relative;
+    top: 1px;
+}
+
+.divPadding {
+    padding: 20px 60px;
+    /* text-align: center; */
+}
+
+#feature {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.feature-categories {
+    height: 280px;
+    /* margin: 20px 40px; */
+    position: relative;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    overflow-x: hidden;
+}
+
+.divPadding {
+    display: flex;
+    width: calc(250px *20);
+    animation: scroll 45s linear infinite;
+}
+
+.divPadding:hover {
+    animation-play-state: paused;
+}
+
+@keyframes scroll {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(calc(-250px*10));
+    }
+
+}
+
+#feature .feature-box {
+    width: 180px;
+    text-align: center;
+    padding: 25px 20px;
+    box-shadow: 20px 20px 34px rgba(0, 0, 0, 0.3);
+    border: 1px solid wheat;
+    border-radius: 4px;
+    /* margin: 15px; */
+    perspective: 100px;
+    height: 50%;
+
+}
+
+#feature .feature-box:hover {
+    box-shadow: 10px 10px 54px rgba(72, 62, 222, 0.132);
+
+}
+
+#feature .feature-box img {
+    width: 105%;
+    margin-bottom: 10px;
+}
+
+.feature-box img:hover {
+    transform: translateZ(40px);
+}
+
+#feature .feature-box h6 {
+    display: inline-block;
+    padding: 9px 8px 6px 8px;
+    line-height: 1;
+    border-radius: 4px;
+    color: #070706;
+    background-color: rgb(152, 140, 97);
+}
+
+.feature-categories::before,
+.feature-categories::after {
+    background: linear-gradient(to right, rgba(235, 152, 37, 0.584) 0%, rgba(24, 1, 1, 0) 100%);
+    content: '';
+    height: 100%;
+    position: absolute;
+    width: 15%;
+    z-index: 1;
+}
+
+.feature-categories::before {
+    left: 0;
+    top: 0;
+}
+
+.feature-categories::after {
+    right: 0;
+    top: 0;
+    transform: rotateZ(180deg);
+}
+
+/* product Container on home page */
+.productContainer {
+    max-width: 1500px;
+    background-color: rgba(230, 220, 190, 0.158);
+    margin: auto;
+}
+
+.divPadding2 {
+    padding: 20px 60px;
+
+}
+
+#top-product {
+    text-align: center;
+}
+
+#top-product .pro-container {
+    display: flex;
+
+    /* justify-content:flex-end;  */
+    /* padding-top: 40px; */
+}
+
+#top-product .pro {
+    width: 25%;
+    min-width: 70px;
+    padding: 10px 12px;
+    border: 1px solid rgb(196, 143, 143);
+    cursor: pointer;
+    box-shadow: 20px 20px 30px rgba(73, 60, 60, 0.663);
+    margin: 15px 8px;
+    transition: 0.2s ease;
+    position: relative;
+    border-radius: 15px;
+}
+
+#top-product .pro:hover {
+    box-shadow: rgba(22, 16, 16, 0.99);
+}
+
+#top-product .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#top-product .pro img:hover {
+    width: 104%;
+}
+
+#top-product .pro .des {
+    text-align: start;
+    padding: 10px 0;
+}
+
+#top-product .pro .des span {
+    color: #e6a72b;
+    font-size: 12px;
+}
+
+#top-product .pro h5 {
+    padding-top: 7px;
+    color: rgb(211, 107, 107);
+    font-size: 14px;
+}
+
+#top-product h2 {
+    color: #cc9f52;
+    text-transform: uppercase;
+    text-align: start;
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#top-product p {
+    text-align: start;
+    color: #b4a78f;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#top-product .pro .des i {
+    font-size: 12px;
+    color: rgb(229, 206, 36);
+}
+
+#top-product .pro .des h4 {
+    padding-top: 7px;
+    font-size: 14px;
+    color: darkred;
+}
+
+#top-product .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    font-weight: 500;
+    background-color: rgba(240, 220, 220, 0.76);
+    color: #e39712;
+    border: 1px solid #cc9f52;
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+
+@media screen and (max-width: 650px) {
+
+    .feature-categories,input[type=number],
+    .feature-box, label,h5 {
+        width: 100%;
+        font-size: small;
+        /* The width is 100%, when the viewport is 800px or smaller */
+    }
+
+    .pro {
+        width: 100%;
+    }
+}

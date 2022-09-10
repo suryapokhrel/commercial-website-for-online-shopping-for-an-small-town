@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+}
+.headingdis h1{
+    text-align: center;
+    font-size: 250%;
+}
+
+.insertProduct  fieldset{
+    text-align: left;
+    width: 90%;
+    /* padding-right: none; */
+    /* margin: 10%; */
+    margin-right: 10%;
+    margin-left: 5%;
+    padding-left: 3%;
+    border-radius: 5px;
+    /* box-shadow: 5px 18px rgb(243, 192, 99); */
+    color: black;
+}
+
+.insertProduct  legend{
+    text-align: center;
+    font-size: 160%;
+    border-bottom: 1px solid brown;
+    border-top: 1px solid brown;
+    border-radius: 10px;
+}
+.insertProduct table{
+    width: 90%;
+    text-align: center;
+    padding: 10px;
+
+    /* margin: 40px; */
+    /* padding: 60px; */
+}
+.insertProduct td{
+    margin-left: 20%;
+    /* padding-left: 40px; */
+}
+.insertProduct .input{
+    padding-left: 40px ;
+    padding-top: 5px ;
+    height: 40px;
+    width: 250px;
+    padding-bottom: 5px ;
+    margin-left: 20%;   
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 3px;
+    color: black;
+}
+.file{
+    width: 250px;
+    
+}
+.insertProduct .input1{
+    width: 80%;
+    align-items: baseline;
+    padding-left: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 80px;
+    /* margin-left: 20%;    */
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    box-shadow: 1px 3px;
+    color: black;
+    min-width: 250px;
+}
+.insertProduct #file{
+    display: none;
+}
+.insertProduct .photo {
+    text-align: center;
+    background: rgba(169, 162, 162, 0.214);
+    cursor: pointer;
+    border: 2px solid black;
+    margin-bottom: 50px;
+    padding-right: 20px;
+
+    /* width: 250px; */
+    
+}
+
+input[type=submit],
+input[type=reset]{
+    /* margin: 5px; */
+    /* float: right; */
+    width: 150px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    border: 1px solid #0d6efd;
+    border-radius: 4px;
+    padding: 10px 25px;
+    color: #0d6efd;
+}
+input[type=submit]:hover,
+input[type=reset]:hover {
+    color: white;
+    background-color: #0d6efd;
+    transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width:767.5px) {
+    .insertProduct td{
+        text-align: left;
+        display: grid;
+    }
+    .insertProduct .input{
+        padding-left: 5px ;
+        padding-top: 5px ;
+        padding-bottom: 5px ;
+        margin-left: 0%; 
+        width: 90%;  
+
+    }
+    .insertProduct  fieldset{
+        text-align: left;
+        width: 90%;
+    }
+    .insertProduct .input1 {
+        width: 90%;
+        align-items: baseline;
+        padding-left: 40px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        height: 80px;
+        /* margin-left: 20%;    */
+        margin-top: 20px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        box-shadow: 1px 3px;
+        color: black;
+        min-width: 250px;
+    }
+    input[type=submit],
+    input[type=reset] {
+        margin-left: 120px;
+        height: 35px;
+        width: 120px;
+    }
+}

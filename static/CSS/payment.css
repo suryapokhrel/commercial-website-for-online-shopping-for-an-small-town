@@ -1,0 +1,118 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.containerpayment {
+    /* max-width: 1400px; */
+    /* margin-left: 0%; */
+    margin-left: 25%;
+    margin-top: 20px;
+    align-items: center;
+    border: 1px solid black;
+    /* min-width: 600px; */
+    width: 50%;
+}
+
+.containerpayment .titleBanner {
+    margin-left: 80px;
+    padding-top: 10px;
+    justify-content: space-around;
+    background: gainsboro;
+    margin: 30px 70px 30px 70px;
+    align-items: center;
+    height: 60px;
+    align-items: center;
+
+}
+
+
+.containerpayment .titleBanner #name {
+    font-size: 40px;
+    text-align: center;
+    /* align-items: center; */
+    /* padding: 3%; */
+}
+
+.containerpayment .table table {
+    width: 100%;
+    padding: 30px;
+}
+
+.containerpayment .table th {
+    background: lightgray;
+    height: 30px;
+}
+
+.containerpayment .table table,
+.containerpayment tr,
+.containerpayment td {
+    text-align: left;
+    padding: 20px;
+
+}
+
+.containerpayment .table .col {
+    border: 2px solid gray;
+
+}
+b{
+    border-bottom: 2px solid grey;
+}
+.containerpayment .para table{
+    width: 100%;
+    padding: 30px;
+    word-wrap: break-word;
+}
+
+.para .table table,
+.para tr,
+.para td {
+    text-align: left;
+    padding: 20px;
+
+}
+
+.para select{
+    padding: 6%;
+    border-radius: 2%;
+    width: auto;
+}
+/* .button {
+    margin-right: 8%;
+} */
+.venue{
+    margin-left: 10px;
+}
+
+input[type=button] , input[type=submit] {
+    width: 120px;
+    margin: 10px;
+    float: right;
+    font-size: 14px;
+    border: 1px solid #0d6efd;
+    border-radius: 4px;
+    padding: 10px 25px;
+    color: #0d6efd;
+    margin-left: 50px;
+}
+
+input[type=button]:hover {
+    color: white;
+    background-color: #0d6efd;
+    transition: all 0.3s ease 0s;
+}
+
+@media screen and (max-width:1200px) {
+    .containerpayment {
+        width:80%;
+        margin-left: 13%;
+        margin-right: 10px;
+        margin-top: 20px;
+        margin-bottom: 5%;
+        align-items: center;
+        border: 1px solid black;
+        /* min-width: 600px; */
+    }
+}

@@ -1,0 +1,178 @@
+/* Title */
+.title {
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    background-color: rgb(27, 26, 26);
+    width: 100%;
+}
+
+.title h1 {
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    font-size: 40px;
+}
+
+.containerlogin{
+    width: 100%;
+    margin-right: 0%;
+}
+
+/* Main Container */
+.form {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    padding-left: 0vw;
+    border: 1px solid black;
+    width: 30%;
+    margin-left: 37%;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 7px 12px black;
+}
+
+
+/* Label */
+.containerlogin label {
+    font-size: larger;
+    font-weight: lighter;
+    margin-top: 1.5em;
+    margin-bottom: 4px;
+}
+
+a:hover {
+    color: orange;
+    transition: all 0.4s ease 0s;
+}
+
+
+/* Input */
+.form input[type=email],select {
+    width: 60%;
+    padding: 9px 11px;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    padding: 5px;
+    margin-left: 9%;
+}
+.form select {
+    width: 68%;
+    padding: 9px 11px;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    padding: 5px;
+    margin-left: 9%;
+}
+ .form input[type=password] {
+    width: 60%;
+    padding: 9px 11px;
+    border-radius: 5px;
+    border-color: black;
+    border-width: 1px;
+    padding: 5px;
+    margin: 1%;
+}
+.form input[type=checkbox] {
+ margin-left: 35%;
+}
+
+.form button[type=submit]{
+    margin-left: 35%;
+    width: 30%;
+    background-color: orange;
+} 
+
+/* Button */
+.containerlogin button {
+    width: 70%;
+    border-radius: 4px;
+    padding: 8px 5px;
+    margin-top: 1.5em;
+    border: 0;
+    background-color: #00B74A;
+}
+
+.containerlogin button:hover {
+    background-color: #04923f;
+    transition: all 0.4s ease 0s;
+}
+
+.createAcc{
+    margin-left: 15%;
+}
+
+.createAcc a , .forgpwd a{
+    text-decoration: none;
+}
+
+.forgpwd{
+    margin-left: 30%;
+}
+
+
+/* Responsive Part */
+@media(max-width:1300px){
+    /* Main Container */
+    .form {
+        margin-top: 2em;
+        margin-bottom: 5em;
+        margin-left: 15%;
+        width: 60%;
+
+    }
+}
+
+@media(max-width:900px){
+    /* Main Container */
+    .form {
+        margin-top: 2em;
+        margin-bottom: 5em;
+        width: 70%;
+        
+    }
+    .containerlogin input[type=email] {
+        width: 60%;
+        padding: 8px 10px;
+        border-radius: 5px;
+        border-color: black;
+        border-width: 1px;
+        padding: 5px;
+        margin-left: 11%;
+    }
+    /* .form input[type=password] {
+        width: 60%;
+        padding: 8px 10px;
+        border-radius: 5px;
+        border-color: black;
+        border-width: 1px;
+        padding: 5px;
+        margin-left: 11%;
+    } */
+    .form select {
+        width: 60%;
+        padding: 8px 10px;
+        border-radius: 5px;
+        border-color: black;
+        border-width: 1px;
+        padding: 5px;
+        margin-left: 11%;
+    }
+    .form input[type=checkbox] {
+        margin-left: 30%;
+    }
+    .createAcc{
+        margin-left: -5%;
+    }
+    .forgpwd{
+        margin-left: 15%;
+        padding-right: 0%;
+    }
+    
+}
+.error{
+    color: red;
+    align-content: center;
+}

@@ -1,0 +1,13 @@
+DROP TRIGGER customer_trigger;
+DROP TRIGGER admin_trigger;
+DROP TRIGGER trader_trigger;
+DROP TRIGGER dashboard_trigger;
+DROP TRIGGER report_trigger;
+DROP TRIGGER shop_trigger;
+DROP TRIGGER offer_trigger;
+DROP TRIGGER product_trigger;
+DROP TRIGGER cart_trigger;
+DROP TRIGGER order_product_trigger;
+DROP TRIGGER bill_trigger;
+DROP TRIGGER customer_review_trigger;
+DROP TRIGGER wishlist_trigger;

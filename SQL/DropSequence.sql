@@ -1,0 +1,13 @@
+DROP SEQUENCE customer_sequence;
+DROP SEQUENCE admin_sequence;
+DROP SEQUENCE trader_sequence;
+DROP SEQUENCE dashboard_sequence;
+DROP SEQUENCE report_sequence;
+DROP SEQUENCE shop_sequence;
+DROP SEQUENCE offer_sequence;
+DROP SEQUENCE product_sequence;
+DROP SEQUENCE cart_sequence;
+DROP SEQUENCE order_product_sequence;
+DROP SEQUENCE bill_sequence;
+DROP SEQUENCE customer_review_sequence;
+DROP SEQUENCE wishlist_sequence;

@@ -1,0 +1,381 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
+}
+
+.fixed-top {
+    position: sticky;
+    top: 0px;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.fixed-top .grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    /* background-color: green; */
+}
+
+.fixed-top .grid-container .grid-item {
+    background-color: green;
+    border: 1px solid rgba(245, 239, 239, 0.8);
+    /* padding: 20px; */
+    font-size: 30px;
+    color: white;
+    width: auto;
+    text-align: center;
+}
+
+.fixed-top .grid-container .grid-item2 {
+    background-color: white;
+    border: 1px solid rgba(253, 252, 252, 0.8);
+    /* padding: 20px; */
+    font-size: 30px;
+    color: rgb(43, 45, 46);
+    width: auto;
+    text-align: center;
+}
+
+.fixed-top .grid-container .grid-item3 {
+    background-color: black;
+    border: 1px solid rgba(9, 9, 9, 0.8);
+    /* padding: 20px; */
+    font-size: 30px;
+    color: rgb(43, 45, 46);
+    width: auto;
+    text-align: center;
+}
+
+.grid-item2 .logoimg {
+    /* position: relative; */
+    left: 10px;
+    padding-left: 0px;
+    margin-left: 0px;
+    position: absolute;
+    height: 70px;
+    padding-top: 10px;
+}
+.grid-item h5{
+    color: white;
+}
+button {
+    padding: 6px;
+    margin-top: 20px;
+    /* margin-right: 16px; */
+    background: orange;
+    font-size: 17px;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    margin-left: none;
+}
+
+button:hover {
+    background: green;
+    color: white;
+}
+
+.search-container .search {
+    position: relative;
+    /* margin-left: -5%; */
+    color: rgb(13, 13, 13);
+    width: 45%;
+    border: 0.1rem solid rgb(7, 7, 7);
+    border-radius: none;
+    height: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    /* display: flex-end; */
+
+}
+
+.search-container .pageName {
+    color: black;
+    font-size: 25px;
+    margin-left: 5%;
+}
+
+.cart {
+    color: black;
+    font-size: 25px;
+    margin-left: 0.5%;
+}
+
+.wishlist {
+    color: red;
+    font-size: 25px;
+    margin-left: 0.5%;
+}
+.link {
+    color: black;
+    font-size: 25px;
+    margin-left: 0.5%;
+}
+.pageName2 {
+    color: black;
+    font-size: 35px;
+}
+
+.cart2 {
+    color: black;
+    font-size: 35px;
+}
+
+.wishlist2 {
+    color: red;
+    font-size: 35px;
+}
+
+.pageName2 .fa-sign-in {
+    margin-top: 5%;
+}
+
+.cart2 .fa-shopping-cart {
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.wishlist2 .fa-heart {
+    margin-left: 3%;
+    margin-top: 5%;
+}
+
+.fa-bars {
+    margin-left: 4%;
+}
+
+.pageName:hover,
+.cart:hover,
+.wishlist:hover {
+    background: green;
+    color: white;
+}
+
+.fa-sign-in:hover,
+.fa-shopping-cart:hover {
+    background: green;
+    color: white;
+}
+
+.fa-heart:hover {
+    color: red;
+}
+
+.grid-item2 h3 {
+    float: left;
+    margin-left: 5%;
+    margin-top: 1%;
+}
+
+.search-container2 {
+    display: none;
+}
+
+.cart2,
+.wishlist2,
+.pageName2{
+    display: none;
+}
+
+.link2{
+    display: none;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+    width: 70%;
+    margin-left: 25%;
+}
+
+.topnav a {
+    float: left;
+    font-size: 17px;
+    color: white;
+    text-align: center;
+    padding: 17px 23px;
+    text-decoration: none;
+}
+
+.active {
+    background-color: #04AA6D;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.dropdown {
+    float: left;
+    overflow: hidden;
+    color: black;
+}
+
+.dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 10px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    color: white;
+}
+
+.topnav a:hover,
+.dropdown:hover .dropbtn {
+    background-color: green;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+@media screen and (max-width: 1000px) {
+
+    .topnav a,
+    .dropbtn {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: left;
+        display: contents;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .topnav.responsive {
+        position: relative;
+    }
+
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+
+    .topnav.responsive .dropdown {
+        float: none;
+    }
+
+    .topnav.responsive .dropdown-content {
+        position: relative;
+    }
+
+    .topnav.responsive .dropdown .dropbtn {
+        display: block;
+        width: 100%;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width:1000px) {
+
+    .grid-item h5 {
+        font-size: 14px;
+    }
+
+    .grid-item2 .logoimg {
+        height: 70px;
+    }
+
+    .search-container2 .search {
+        margin-left: 0%;
+        width: 80%;
+        font-size: 20px;
+    }
+
+    .search-container button {
+        font-size: 12px;
+        padding: 3px;
+    }
+
+    .grid-item2 h3 {
+        font-size: 20px;
+        margin-top: 5%;
+        margin-bottom: 5%;
+        margin-right: 0%;
+        margin-left: 17%;
+        color: black;
+    }
+
+    .cart2,
+    .wishlist2,
+    .pageName2, .link2 {
+        display: contents;
+        font-size: 20px;
+    }
+    
+    .search-container {
+        display: none;
+    }
+
+    .search-container2 {
+        display: contents;
+    }
+
+    .dropdown .dropdown-content {
+        display: none;
+        z-index: inherit;
+    }
+    button {
+        /* padding: 6px; */
+        margin-top: 20px;
+        /* margin-right: 16px; */
+        background: orange;
+        font-size: 15px;
+        border: none;
+        cursor: pointer;
+        height: 28px;
+        margin-left: none;
+    }
+}
+
+
+
+@media screen and (max-width:1400px) and (min-width:1000px){
+    .topnav{
+        width: 100%;
+        margin-left: 10%;
+    }
+}
